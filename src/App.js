@@ -5,8 +5,8 @@ function App() {
 
   const reqApi = async () => {
     const api= await fetch('https://rickandmortyapi.com/api/character')
-
-    console.log(api);
+    const characterApi = await api.json();
+    console.log(characterApi);
   };
 
   return (
